@@ -1,0 +1,29 @@
+.product-single__thumbnail {
+    /* border: 20px solid red */
+}
+
+#thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.swiper-wrapper img[width='104'] {
+    opacity: .5;
+}
+
+.swiper-wrapper img.active {
+    opacity: 1;
+}
+
+.product-single__image-item {
+    position: relative;
+}
+
+a svg {
+    font-size: 2px;
+}
+
+select {
+    width: 100%;
+}

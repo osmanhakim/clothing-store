@@ -1,0 +1,22 @@
+.colors {
+    display: flex;
+    gap: 3px;
+    padding: 5px;
+}
+
+.colors span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.colors span:first-child {
+    background-color: red;
+}
+
+.colors span.selected {
+    border: 1px solid black;
+}

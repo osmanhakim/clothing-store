@@ -1,0 +1,145 @@
+/* Hot Deals Swiper Container */
+.hot-deals-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    overflow: hidden;
+    /* Prevents layout shifts */
+    /* display: none; */
+
+}
+
+/* @media (min-width: 1500px) {
+    .swiper {
+        display: flex;
+    }
+} */
+
+
+/* Individual Slides */
+.swiperslide {
+    padding: 15px;
+    background-color: #EDECEA;
+    width: 258px !important;
+    /* Match your image width */
+    flex-direction: column;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    margin-right: 30px !important;
+}
+
+.swiperslide:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image */
+.swiperslide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.onhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.product-actions {
+    opacity: 0;
+    transition: .3s;
+    color: black;
+}
+
+.product-actions {}
+
+.onhover:hover .product-actions {
+    opacity: 1;
+}
+
+
+
+
+/* Product Info */
+.swiperslide h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.swiperslide .price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000;
+}
+
+@media (max-width: 992px) {
+    .hot-deals-swiper {
+        padding: 15px 0;
+    }
+
+    .swiperslide {
+        margin-right: 20px;
+        padding: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        padding: 10px 0;
+    }
+
+    .swiperslide {
+        margin-right: 15px;
+    }
+
+    .swiperslide img {
+        height: 150px;
+    }
+}
